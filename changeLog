@@ -1,4 +1,7 @@
 modify youzan_api.php 
+
+added:
+
 $postResult = $client->post($method, $params);
 $fansId = $postResult["response"]["trade"]["fans_info"]["fans_id"]
 
