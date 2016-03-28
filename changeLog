@@ -1,0 +1,16 @@
+modify youzan_api.php 
+$postResult = $client->post($method, $params);
+$fansId = $postResult["response"]["trade"]["fans_info"]["fans_id"]
+
+
+/*
+if(958584422 == $fansId)
+    echo'<script>console.log("yes");</script>';
+else
+    echo'<script>console.log("no");</script>';
+*/
+?>
+
+<script>
+    console.log("fansId:" + <?php echo json_encode($fansId);?>);
+</script>
